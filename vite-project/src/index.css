@@ -16,10 +16,19 @@
 
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0 auto;
+  width: min(320px, 90%);
 }
-
+img{
+  max-width: 100%;
+}
+.card{
+  margin-top: 2em;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  padding: .5em;
+}
+.card__tools > * + *{
+  margin-left: 1em;
+  /* padding: 1em; */
+}
